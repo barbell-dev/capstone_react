@@ -20,3 +20,27 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.login-credentials {
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  width: 195px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-image: linear-gradient(to right, blue, white);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

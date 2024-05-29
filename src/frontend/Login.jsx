@@ -1,7 +1,13 @@
 import "./Login.css";
 import background from "../assets/pesu.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+  function handleLogin(event) {
+    event.preventDefault();
+    navigate("/home");
+  }
   return (
     <>
       <div
@@ -15,20 +21,23 @@ export default function Login() {
         }}
         className="login-background"
       >
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleLogin}>
           <input
             name="login-username"
             placeholder="USERNAME"
             type="text"
+            className="login-credentials"
           ></input>
           <br></br>
           <input
             name="login-password"
             placeholder="PASSWORD"
             type="password"
+            className="login-credentials"
           ></input>
           <br></br>
-          <button name="login-submit-button" type="submit">
+          <br></br>
+          <button name="login-submit-button" type="submit" className="button">
             Sign In
           </button>
         </form>
