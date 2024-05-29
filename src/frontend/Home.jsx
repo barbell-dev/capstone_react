@@ -3,7 +3,8 @@ import Sidebar from "./Sidebar";
 export default function Home() {
   return (
     <div>
-      <Sidebar />
+      <Sidebar route="home" />
+      <p>Home</p>
     </div>
   );
 }

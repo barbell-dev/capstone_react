@@ -63,6 +63,8 @@
   margin-bottom: 40px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebar_item:hover {
@@ -74,12 +76,19 @@
   margin-right: 10px;
 }
 
-.sidebar_item p {
+.sidebar_item li {
   font-size: 1rem;
+  list-style-type: none;
 }
+
 .sidebar_menu {
   display: none;
 }
+
+.sidebar_item.active {
+  background-color: #555; /* or any desired color/styling */
+}
+
 @media (max-width: 768px) {
   .sidebar {
     display: none;

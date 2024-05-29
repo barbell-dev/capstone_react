@@ -33,7 +33,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-image: linear-gradient(to right, blue, white);
+  /* background-image: linear-gradient(to right, blue, white); */
   cursor: pointer;
   transition: border-color 0.25s;
 }
