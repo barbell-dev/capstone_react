@@ -1,0 +1,31 @@
+.file-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.file-input-label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.file-input-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-icon {
+  margin-right: 5px;
+}
+
+.file-input {
+  display: none;
+}
